@@ -25,7 +25,7 @@ conda config --add channels r
 conda config --add channels bioconda
 ```
 
-## Create a new conda environment
+### Create a new conda environment (you have to do it only once)
 ```
 conda create -n test blast python=3 biopython
 ```
