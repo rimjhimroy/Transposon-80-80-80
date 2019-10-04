@@ -1,8 +1,8 @@
 # Transposon-80-80-80
 ## Requirements
-Python3
-Ncbi-blast+  
-Biopython
+Python3  
+Ncbi-blast+    
+Biopython  
 
 ### The scripts `full_blast.py` and `query_coverage.py` should be in path.
 Put the following line with the absolute path of Transposon-80-80-80 in the .bashrc or .bash_profile  
