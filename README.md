@@ -10,23 +10,30 @@ Put the following line with the absolute path of Transposon-80-80-80 in the .bas
 
 ## Minimalist installation of dependencies using conda
 ### Setup Conda (you have to do it only once)
+```
 wget https://repo.continuum.io/miniconda/Miniconda3-latest-Linux-x86_64.sh
 chmod +x Miniconda3-latest-Linux-x86_64.sh
 ./Miniconda3-latest-Linux-x86_64.sh 
 conda config --set auto_activate_base False
 conda update conda
-
+```
 ### Get the required conda channels (you have to do it only once)
+```
 conda config --add channels conda-forge
 conda config --add channels defaults
 conda config --add channels r
 conda config --add channels bioconda
+```
 
 ## Create a new conda environment
+```
 conda create -n test blast python=3 biopython
+```
 
 ## Activate envitonment
+```
 conda activate blast
+```
  
 ## Usage
 ```
