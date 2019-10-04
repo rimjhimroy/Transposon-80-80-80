@@ -65,5 +65,5 @@ optional arguments:
   -t number_of_threads, --num_threads number_of_threads
                         Maximum number of threads [DEFAULT: 4]
                         
-The following arguments are required: -query, -subject, -program  
+the following arguments are required: -q/--query, -s/--subject, -p/--program
 ```
