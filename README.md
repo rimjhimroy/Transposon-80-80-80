@@ -42,5 +42,5 @@ full_blast.py [-h] -query blast_query -subject blast_subject -program
                      [-identity identity_cutoff]  
                      [-querycov query_coverage_cutoff] [-hitlength hit_length]  
                      [-num_threads number_of_threads]  
-full_blast.py: error: the following arguments are required: -query, -subject, -program  
+the following arguments are required: -query, -subject, -program  
 ```
