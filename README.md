@@ -53,8 +53,7 @@ optional arguments:
   -p blast_program, --program blast_program
                         REQUIRED: blast program to use blastn/megablast
   -o blast_output_path, --blastout blast_output_path
-                        full path to blast output folder to store in -outfmt
-                        6/ -m8 format [DEFAULT: ./outblast]
+                        full path to blast output folder to store in -outfmt 6/ -m8 format [DEFAULT: ./outblast]
   -i identity_cutoff, --identity identity_cutoff
                         Minimum identity cutoff in % [DEFAULT: 80]
   -qc query_coverage_cutoff, --querycov query_coverage_cutoff
