@@ -42,8 +42,7 @@ conda activate blast
                      [-qc query_coverage_cutoff] [-l hit_length]
                      [-t number_of_threads]
 
-This script takes a query and a database file for blastn/megablast and parses
-it
+This script takes a query and a database file for blastn/megablast and parses it
 
 optional arguments:
   -h, --help            show this help message and exit
