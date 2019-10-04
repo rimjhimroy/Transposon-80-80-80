@@ -27,7 +27,7 @@ conda config --add channels bioconda
 
 ### Create a new conda environment (you have to do it only once)
 ```
-conda create -n test blast python=3 biopython
+conda create -n blast blast python=3 biopython
 ```
 
 ## Activate envitonment
