@@ -1,0 +1,81 @@
+Metadata-Version: 2.1
+Name: transposon80-80-80
+Version: 0.1
+Summary: A package to blast transposons against a reference TE database and filter them according to the 80-80-80 rule (Wicker et al. 2007, NRG)
+Home-page: https://github.com/rimjhimroy/Transposon80-80-80
+Author: Rimjhim Roy Choudhury
+Author-email: rimjhim.roy.ch@gmail.com
+License: UNKNOWN
+Description: # Transposon-80-80-80
+        ## Requirements
+        Python3  
+        Ncbi-blast+    
+        Biopython  
+        
+        ### The scripts `full_blast.py` and `query_coverage.py` should be in path.
+        #Put the following line with the absolute path of Transposon-80-80-80 in the .bashrc or .bash_profile  
+        #`export PATH=PATH/TO/Transposon80-80-80:$PATH`  
+        
+        ## Minimalist installation of dependencies using conda
+        ### Setup Conda (you have to do it only once)
+        ```
+        wget https://repo.continuum.io/miniconda/Miniconda3-latest-Linux-x86_64.sh
+        chmod +x Miniconda3-latest-Linux-x86_64.sh
+        ./Miniconda3-latest-Linux-x86_64.sh 
+        conda config --set auto_activate_base False
+        conda update conda
+        ```
+        ### Get the required conda channels (you have to do it only once)
+        ```
+        conda config --add channels conda-forge
+        conda config --add channels defaults
+        conda config --add channels r
+        conda config --add channels bioconda
+        ```
+        
+        ### Create a new conda environment (you have to do it only once)
+        ```
+        conda create -n blast blast python=3 biopython
+        ```
+        
+        ## Activate envitonment
+        ```
+        conda activate blast
+        ```
+         
+        ## Usage
+        ```
+         full_blast.py [-h] -q blast_query -s blast_subject -p blast_program
+                             [-o blast_output_path] [-i identity_cutoff]
+                             [-qc query_coverage_cutoff] [-l hit_length]
+                             [-t number_of_threads]
+        
+        This script takes a query and a database file for blastn/megablast and parses it
+        
+        optional arguments:
+          -h, --help            show this help message and exit
+          -q blast_query, --query blast_query
+                                REQUIRED: Full path to query file
+          -s blast_subject, --subject blast_subject
+                                REQUIRED: Full path to subject file
+          -p blast_program, --program blast_program
+                                REQUIRED: blast program to use blastn/megablast
+          -o blast_output_path, --blastout blast_output_path
+                                full path to blast output folder to store in -outfmt 6/ -m8 format [DEFAULT: ./outblast]
+          -i identity_cutoff, --identity identity_cutoff
+                                Minimum identity cutoff in % [DEFAULT: 80]
+          -qc query_coverage_cutoff, --querycov query_coverage_cutoff
+                                Minimum query coverage cutoff in % [DEFAULT: 20]
+          -l hit_length, --hitlength hit_length
+                                Minimum hit length cutoff in bps [DEFAULT: 80]
+          -t number_of_threads, --num_threads number_of_threads
+                                Maximum number of threads [DEFAULT: 4]
+                                
+        the following arguments are required: -q/--query, -s/--subject, -p/--program
+        ```
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown

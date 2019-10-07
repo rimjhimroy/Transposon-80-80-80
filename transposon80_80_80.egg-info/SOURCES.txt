@@ -1,0 +1,8 @@
+README.md
+full_blast
+query_coverage.py
+setup.py
+transposon80_80_80.egg-info/PKG-INFO
+transposon80_80_80.egg-info/SOURCES.txt
+transposon80_80_80.egg-info/dependency_links.txt
+transposon80_80_80.egg-info/top_level.txt

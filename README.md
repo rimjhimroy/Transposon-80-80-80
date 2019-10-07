@@ -5,8 +5,8 @@ Ncbi-blast+
 Biopython  
 
 ### The scripts `full_blast.py` and `query_coverage.py` should be in path.
-Put the following line with the absolute path of Transposon-80-80-80 in the .bashrc or .bash_profile  
-`export PATH=PATH/TO/Transposon-80-80-80:$PATH`  
+#Put the following line with the absolute path of Transposon-80-80-80 in the .bashrc or .bash_profile  
+#`export PATH=PATH/TO/Transposon80-80-80:$PATH`  
 
 ## Minimalist installation of dependencies using conda
 ### Setup Conda (you have to do it only once)

@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+#!python
 
 # Adapted  and improved for python3 by Rimjhim Roy Choudhury from https://github.com/jeevka/BLAST_Filter/blob/master/BLAST_Filter_Table.py by Jeevan Karloss
 
