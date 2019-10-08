@@ -1,4 +1,4 @@
-# Transposon-80-80-80
+# Transposon80-80-80
 ## Requirements
 Python3  
 Ncbi-blast+    
