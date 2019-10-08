@@ -36,7 +36,7 @@ conda activate blast
  
 ## Usage
 ```
- full_blast.py [-h] -q blast_query -s blast_subject -p blast_program
+ full_blast [-h] -q blast_query -s blast_subject -p blast_program
                      [-o blast_output_path] [-i identity_cutoff]
                      [-qc query_coverage_cutoff] [-l hit_length]
                      [-t number_of_threads]
